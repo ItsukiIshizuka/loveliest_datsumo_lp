@@ -103,21 +103,6 @@ export default function Footer() {
                 24時間受付（返信は営業時間内）
               </p>
             </div>
-
-            <div className="mt-8 space-y-2">
-              <p className="font-body text-[11px] text-background/40 font-medium tracking-wide uppercase">
-                Menu
-              </p>
-              <ul className="space-y-1.5 font-body text-sm text-background/50">
-                {['全身脱毛', '部分脱毛', '無料カウンセリング'].map((m) => (
-                  <li key={m}>
-                    <a href={LINE_URL} className="hover:text-background/80 transition-colors">
-                      {m}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
         </div>
 
