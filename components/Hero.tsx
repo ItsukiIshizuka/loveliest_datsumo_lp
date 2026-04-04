@@ -4,6 +4,7 @@ import Image from 'next/image'
 const LINE_URL = '#' // TODO: 実際のLINE URLに差し替え
 
 const HERO_IMAGE_SRC = '/images/hero-main.png'
+const HERO_IMAGE_SP_SRC = '/images/hero-sp.png'
 
 const features = ['全身 約1時間', '都度払い・縛りなし', '完全個室', '子連れ相談可']
 
@@ -13,13 +14,22 @@ export default function Hero() {
       className="relative min-h-svh flex items-center overflow-hidden"
       aria-label="ファーストビュー"
     >
-      {/* 背景画像 */}
+      {/* 背景画像: SP用縦長 / PC用横長 */}
       <Image
-        src={HERO_IMAGE_SRC}
+        src={HERO_IMAGE_SP_SRC}
         alt="Loveliestの施術シーン・美肌イメージ"
         fill
         sizes="100vw"
-        className="object-cover object-center"
+        className="object-cover object-center lg:hidden"
+        quality={90}
+        priority
+      />
+      <Image
+        src={HERO_IMAGE_SRC}
+        alt=""
+        fill
+        sizes="100vw"
+        className="object-cover object-center hidden lg:block"
         quality={90}
         priority
       />
