@@ -19,7 +19,7 @@ export default function Hero() {
         src={HERO_IMAGE_SP_SRC}
         alt="Loveliestの施術シーン・美肌イメージ"
         fill
-        sizes="100vw"
+        sizes="(min-width: 1024px) 1px, 100vw"
         className="object-cover object-center lg:hidden"
         quality={90}
         priority
@@ -28,7 +28,7 @@ export default function Hero() {
         src={HERO_IMAGE_SRC}
         alt=""
         fill
-        sizes="100vw"
+        sizes="(max-width: 1023px) 1px, 100vw"
         className="object-cover object-center hidden lg:block"
         quality={90}
         priority
