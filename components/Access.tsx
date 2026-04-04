@@ -26,7 +26,7 @@ const accessItems = [
 
 export default function Access() {
   return (
-    <section className="py-24 sm:py-32 bg-secondary/40" aria-labelledby="access-title">
+    <section id="access" className="py-24 sm:py-32 bg-secondary/40" aria-labelledby="access-title">
       <div className="mx-auto max-w-5xl px-5 sm:px-6">
         {/* ヘッダー */}
         <div className="text-center mb-14 reveal reveal-stagger-1">
