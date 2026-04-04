@@ -48,33 +48,33 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col justify-center w-full lg:w-1/2 px-6 sm:px-10 lg:px-14 xl:px-20 py-24 lg:py-32">
         {/* バッジ */}
         <p className="hero-tag inline-flex items-center gap-2.5 font-body text-[11px] tracking-[0.2em] uppercase text-primary mb-7">
-          <span className="block h-px w-6 bg-primary" aria-hidden />
-          千葉・我孫子 — プライベートビューティーサロン
-          <span className="block h-px w-6 bg-primary" aria-hidden />
+          <span className="block h-px w-6 bg-primary shrink-0" aria-hidden />
+          <span className="whitespace-nowrap">千葉・我孫子 — プライベートビューティーサロン</span>
+          <span className="block h-px w-6 bg-primary shrink-0" aria-hidden />
         </p>
 
         {/* H1 */}
         <h1 className="hero-title font-display text-[2.6rem] sm:text-[3.4rem] lg:text-[3rem] xl:text-[3.6rem] leading-[1.25] tracking-tight text-foreground mb-6">
-          高い・痛い・
-          <wbr />
-          時間がかかる。
-          <br />
-          <span className="text-primary">その悩み、</span>
-          <br />
-          <span className="text-primary">解決します。</span>
+          <span className="block">
+            <span className="whitespace-nowrap">高い・</span>
+            <span className="whitespace-nowrap">痛い・</span>
+            <span className="whitespace-nowrap">時間がかかる。</span>
+          </span>
+          <span className="block text-primary">
+            <span className="whitespace-nowrap">その悩み、</span>
+            <span className="whitespace-nowrap">解決します。</span>
+          </span>
         </h1>
 
         {/* サブコピー */}
         <p className="hero-sub font-body text-base sm:text-lg text-muted-foreground leading-[1.9] mb-4">
-          Loveliestは、我孫子市のプライベートサロン。
-          <br />
-          医療脱毛に近い効果の
-          <strong className="text-foreground font-medium">LED脱毛</strong>
-          を、
-          <strong className="text-foreground font-medium">都度払い</strong>
-          でご提供。
-          <br />
-          回数券なし・縛りなし。ご自身のペースで通えます。
+          <span className="whitespace-nowrap">Loveliestは、</span>
+          <span className="whitespace-nowrap">我孫子市のプライベートサロン。</span>
+          <span className="whitespace-nowrap">医療脱毛に近い効果の<strong className="text-foreground font-medium">LED脱毛</strong>を、</span>
+          <span className="whitespace-nowrap"><strong className="text-foreground font-medium">都度払い</strong>でご提供。</span>
+          <span className="whitespace-nowrap">回数券なし・</span>
+          <span className="whitespace-nowrap">縛りなし。</span>
+          <span className="whitespace-nowrap">ご自身のペースで通えます。</span>
         </p>
 
         {/* 特徴ピル */}

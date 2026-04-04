@@ -38,14 +38,15 @@ export default function Pricing() {
             id="pricing-title"
             className="font-display text-3xl sm:text-4xl tracking-tight text-foreground mb-4"
           >
-            シンプルで
+            <span className="whitespace-nowrap">シンプルで</span>
             <br className="sm:hidden" />
-            わかりやすい料金
+            <span className="whitespace-nowrap">わかりやすい料金</span>
           </h2>
           <p className="font-body text-muted-foreground text-base max-w-md mx-auto leading-relaxed">
-            都度払いだから、続けやすい。
+            <span className="whitespace-nowrap">都度払いだから、続けやすい。</span>
             <br />
-            回数券・コースの縛りは一切ありません。
+            <span className="whitespace-nowrap">回数券・コースの縛りは</span>
+            <span className="whitespace-nowrap">一切ありません。</span>
           </p>
         </div>
 

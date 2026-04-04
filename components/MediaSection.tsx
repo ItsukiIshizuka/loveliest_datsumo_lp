@@ -29,7 +29,8 @@ export default function MediaSection() {
             サロンの雰囲気
           </h2>
           <p className="font-body text-muted-foreground text-base max-w-sm mx-auto leading-relaxed">
-            清潔感のある完全個室で、リラックスして施術を受けられます。
+            <span className="whitespace-nowrap">清潔感のある完全個室で、</span>
+            <span className="whitespace-nowrap">リラックスして施術を受けられます。</span>
           </p>
         </div>
 
@@ -60,7 +61,8 @@ export default function MediaSection() {
         {/* Instagram誘導 */}
         <div className="reveal reveal-stagger-1 text-center">
           <p className="font-body text-sm text-muted-foreground mb-4">
-            施術のビフォーアフターや最新情報はInstagramで発信中
+            <span className="whitespace-nowrap">施術のビフォーアフターや</span>
+            <span className="whitespace-nowrap">最新情報はInstagramで発信中</span>
           </p>
           <a
             href={INSTAGRAM_URL}

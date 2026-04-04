@@ -41,14 +41,15 @@ export default function Benefits() {
             id="benefits-title"
             className="font-display text-3xl sm:text-4xl tracking-tight text-foreground mb-4"
           >
-            Loveliestが選ばれる
+            <span className="whitespace-nowrap">Loveliestが選ばれる</span>
             <br className="sm:hidden" />
-            ４つの理由
+            <span className="whitespace-nowrap">４つの理由</span>
           </h2>
           <p className="font-body text-muted-foreground text-base max-w-md mx-auto leading-relaxed">
-            「高い・痛い・時間がかかる」という脱毛のお悩みに、
+            <span className="whitespace-nowrap">「高い・痛い・時間がかかる」</span>
+            <span className="whitespace-nowrap">という脱毛のお悩みに、</span>
             <br className="hidden sm:block" />
-            Loveliestがお答えします。
+            <span className="whitespace-nowrap">Loveliestがお答えします。</span>
           </p>
         </div>
 

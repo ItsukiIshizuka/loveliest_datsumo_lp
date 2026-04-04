@@ -33,17 +33,19 @@ export default function FinalCTA() {
           id="final-cta-title"
           className="reveal reveal-stagger-2 font-display text-3xl sm:text-4xl lg:text-5xl tracking-tight text-white mb-5 leading-[1.25]"
         >
-          まずは、
+          <span className="whitespace-nowrap">まずは、</span>
           <br className="sm:hidden" />
-          無料カウンセリングへ。
+          <span className="whitespace-nowrap">無料カウンセリングへ。</span>
         </h2>
 
         <p className="reveal reveal-stagger-3 font-body text-base text-white/80 leading-relaxed mb-10 max-w-md mx-auto">
-          「合うかどうか不安…」という方も大歓迎。
+          <span className="whitespace-nowrap">「合うかどうか不安…」という方も大歓迎。</span>
           <br />
-          カウンセリングだけでも、お気軽にどうぞ。
+          <span className="whitespace-nowrap">カウンセリングだけでも、</span>
+          <span className="whitespace-nowrap">お気軽にどうぞ。</span>
           <br />
-          LINEからなら24時間いつでも受け付けています。
+          <span className="whitespace-nowrap">LINEからなら</span>
+          <span className="whitespace-nowrap">24時間いつでも受け付けています。</span>
         </p>
 
         <div className="reveal reveal-stagger-4 flex flex-col sm:flex-row items-center justify-center gap-4">
