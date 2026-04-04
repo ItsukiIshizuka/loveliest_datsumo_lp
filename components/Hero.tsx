@@ -3,72 +3,39 @@ import Image from 'next/image'
 
 const LINE_URL = '#' // TODO: 実際のLINE URLに差し替え
 
-// TODO: 実画像が支給されたら差し替え
-const HERO_IMAGE_SRC = '/images/hero-main.jpg'
+const HERO_IMAGE_SRC = '/images/hero-main.png'
 
 const features = ['全身 約1時間', '都度払い・縛りなし', '完全個室', '子連れ相談可']
 
 export default function Hero() {
   return (
     <section
-      className="relative min-h-svh flex flex-col lg:flex-row items-stretch overflow-hidden"
+      className="relative min-h-svh flex items-center overflow-hidden"
       aria-label="ファーストビュー"
-      style={{
-        background:
-          'linear-gradient(155deg, var(--pearl) 0%, var(--blush) 55%, oklch(0.93 0.022 10) 100%)',
-      }}
     >
-      {/* 装飾円 */}
+      {/* 背景画像 */}
+      <Image
+        src={HERO_IMAGE_SRC}
+        alt="Loveliestの施術シーン・美肌イメージ"
+        fill
+        sizes="100vw"
+        className="object-cover object-center"
+        quality={90}
+        priority
+      />
+
+      {/* テキスト可読性のためのオーバーレイ（左側を暗く） */}
       <div
-        className="pointer-events-none absolute -top-32 -left-24 size-[22rem] rounded-full opacity-20"
-        style={{ background: 'radial-gradient(circle, var(--blush), transparent 68%)' }}
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            'linear-gradient(to right, rgba(255,245,247,0.82) 0%, rgba(255,245,247,0.65) 40%, rgba(255,245,247,0.15) 75%, transparent 100%)',
+        }}
         aria-hidden
       />
-      <div
-        className="pointer-events-none absolute bottom-0 -left-20 size-72 rounded-full opacity-15"
-        style={{ background: 'radial-gradient(circle, var(--primary), transparent 70%)' }}
-        aria-hidden
-      />
 
-      {/* ─── SP: 画像（上）/ PC: 右カラム ─── */}
-      <div
-        className="relative order-1 lg:order-2 w-full lg:w-1/2 aspect-[4/3] lg:aspect-auto"
-      >
-        {/*
-          TODO: 実画像支給後、この div をコメントアウトし下の <Image> を有効化
-          <Image
-            src={HERO_IMAGE_SRC}
-            alt="Loveliestの施術シーン・美肌イメージ"
-            fill
-            sizes="(max-width: 1024px) 100vw, 50vw"
-            className="object-cover object-center"
-            priority
-          />
-        */}
-        {/* ── プレースホルダー（実画像支給後に削除） ── */}
-        <div
-          className="absolute inset-0 flex flex-col items-center justify-center gap-3"
-          style={{
-            background:
-              'linear-gradient(145deg, var(--blush) 0%, oklch(0.89 0.035 5) 60%, oklch(0.84 0.04 355) 100%)',
-          }}
-          aria-hidden
-        >
-          <span className="text-5xl">🌸</span>
-          <p className="font-body text-sm text-primary/70 tracking-wide">施術写真・ビフォーアフター</p>
-          <p className="font-body text-xs text-primary/50">（画像支給後に差し替え）</p>
-        </div>
-
-        {/* PC時: 左端をテキスト背景となじませるフェード */}
-        <div
-          className="hidden lg:block pointer-events-none absolute inset-y-0 left-0 w-24 z-10"
-          style={{ background: 'linear-gradient(to right, oklch(0.95 0.016 10), transparent)' }}
-          aria-hidden
-        />
-      </div>
-
-      {/* ─── SP: テキスト（下）/ PC: 左カラム ─── */}
-      <div className="relative z-10 flex flex-col justify-center order-2 lg:order-1 lg:w-1/2 px-6 sm:px-10 lg:px-14 xl:px-20 pt-10 pb-16 lg:py-24">
+      {/* テキストコンテンツ */}
+      <div className="relative z-10 flex flex-col justify-center w-full lg:w-1/2 px-6 sm:px-10 lg:px-14 xl:px-20 py-24 lg:py-32">
         {/* バッジ */}
         <p className="hero-tag inline-flex items-center gap-2.5 font-body text-[11px] tracking-[0.2em] uppercase text-primary mb-7">
           <span className="block h-px w-6 bg-primary" aria-hidden />
