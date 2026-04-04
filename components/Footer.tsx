@@ -1,4 +1,4 @@
-import { Phone, MapPin, Clock } from 'lucide-react'
+import { Phone, MapPin, Clock, Car } from 'lucide-react'
 import { Separator } from '@/components/ui/separator'
 
 const INSTAGRAM_URL = 'https://www.instagram.com/led_datsumo_loveliest_abiko2'
@@ -50,7 +50,7 @@ export default function Footer() {
               <li className="flex items-start gap-2.5">
                 <MapPin className="size-4 shrink-0 mt-0.5 text-background/40" aria-hidden />
                 <span>
-                  千葉県我孫子市
+                  千葉県我孫子市並木6-10-5
                   <br />
                   <a
                     href={GOOGLE_MAPS_URL}
@@ -71,6 +71,22 @@ export default function Footer() {
                 >
                   080-2562-8508
                 </a>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <Car className="size-4 shrink-0 mt-0.5 text-background/40" aria-hidden />
+                <span>
+                  駐車場あり（2台）
+                  <br />
+                  <a
+                    href="https://maps.app.goo.gl/2Zv3GjZ8rbSV33ju8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline underline-offset-2 hover:text-background/80 transition-colors"
+                    aria-label="並木五丁目パーキングをGoogle マップで確認（新しいタブで開きます）"
+                  >
+                    並木五丁目パーキングの３番と６番
+                  </a>
+                </span>
               </li>
               <li className="flex items-start gap-2.5">
                 <Clock className="size-4 shrink-0 mt-0.5 text-background/40" aria-hidden />

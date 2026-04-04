@@ -5,6 +5,7 @@ import MediaSection from '@/components/MediaSection'
 import Pricing from '@/components/Pricing'
 import Testimonials from '@/components/Testimonials'
 import FAQ from '@/components/FAQ'
+import Access from '@/components/Access'
 import FinalCTA from '@/components/FinalCTA'
 import Footer from '@/components/Footer'
 import ScrollRevealInit from '@/components/ScrollRevealInit'
@@ -24,6 +25,7 @@ export default function Home() {
         <Pricing />
         <Testimonials />
         <FAQ />
+        <Access />
         <FinalCTA />
       </main>
 
