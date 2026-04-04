@@ -51,7 +51,7 @@ export default function FinalCTA() {
         <div className="reveal reveal-stagger-4 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href={LINE_URL}
-            className="btn-cta btn-cta-hero inline-flex items-center justify-center gap-2.5 bg-white/70 backdrop-blur-sm border border-primary/30 text-primary font-body font-semibold text-lg px-10 py-5 rounded-full w-full sm:w-auto shadow-md shadow-primary/10"
+            className="btn-cta btn-cta-hero inline-flex items-center justify-center gap-2.5 bg-white/70 backdrop-blur-sm border border-primary/30 text-primary font-body font-semibold text-sm sm:text-lg px-10 py-5 rounded-full w-full sm:w-auto shadow-md shadow-primary/10 whitespace-nowrap"
             aria-label="LINEで無料カウンセリングを予約する"
           >
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="size-6 shrink-0 fill-primary" aria-label="LINE">

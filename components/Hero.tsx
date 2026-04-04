@@ -93,7 +93,7 @@ export default function Hero() {
         <div className="hero-cta flex flex-col sm:flex-row items-center sm:items-start gap-4">
           <a
             href={LINE_URL}
-            className="btn-cta btn-cta-hero inline-flex items-center justify-center gap-2.5 bg-white/70 backdrop-blur-sm border border-primary/30 text-primary font-body font-semibold text-[1.05rem] sm:text-lg px-8 py-4 rounded-full w-full sm:w-auto shadow-md shadow-primary/10"
+            className="btn-cta btn-cta-hero inline-flex items-center justify-center gap-2.5 bg-white/70 backdrop-blur-sm border border-primary/30 text-primary font-body font-semibold text-sm sm:text-lg px-8 py-4 rounded-full w-full sm:w-auto shadow-md shadow-primary/10 whitespace-nowrap"
             aria-label="LINEで無料カウンセリングを予約する"
           >
             {/* LINE公式SVGロゴ */}

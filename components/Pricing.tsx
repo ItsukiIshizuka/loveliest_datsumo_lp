@@ -130,7 +130,7 @@ export default function Pricing() {
           </p>
           <a
             href={LINE_URL}
-            className="btn-cta inline-flex items-center justify-center gap-2.5 bg-white/70 backdrop-blur-sm border border-primary/30 text-primary font-body font-semibold text-base px-8 py-4 rounded-full shadow-md shadow-primary/10"
+            className="btn-cta inline-flex items-center justify-center gap-2.5 bg-white/70 backdrop-blur-sm border border-primary/30 text-primary font-body font-semibold text-sm px-8 py-4 rounded-full shadow-md shadow-primary/10 whitespace-nowrap"
             aria-label="LINEで予約する"
           >
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 fill-primary" aria-label="LINE">

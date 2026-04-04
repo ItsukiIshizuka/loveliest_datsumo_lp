@@ -107,7 +107,7 @@ export default function Footer() {
             <div className="space-y-3">
               <a
                 href={LINE_URL}
-                className="btn-cta flex items-center justify-center gap-2 bg-white/70 backdrop-blur-sm border border-primary/30 text-primary font-body font-medium text-sm px-5 py-3 rounded-full shadow-sm shadow-primary/10"
+                className="btn-cta flex items-center justify-center gap-2 bg-white/70 backdrop-blur-sm border border-primary/30 text-primary font-body font-medium text-sm px-5 py-3 rounded-full shadow-sm shadow-primary/10 whitespace-nowrap"
                 aria-label="LINEで予約する"
               >
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="size-4 shrink-0 fill-primary" aria-label="LINE">
