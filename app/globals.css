@@ -185,7 +185,7 @@
 
 .btn-cta:hover {
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 8px 24px oklch(0.52 0.08 5 / 0.35);
+  box-shadow: 0 8px 24px oklch(0.52 0.08 5 / 0.15);
 }
 
 .btn-cta:active {
