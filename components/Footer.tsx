@@ -1,7 +1,7 @@
 import { Phone, MapPin, Clock, Car } from 'lucide-react'
 import { Separator } from '@/components/ui/separator'
 
-const INSTAGRAM_URL = 'https://www.instagram.com/led_datsumo_loveliest_abiko2'
+const INSTAGRAM_URL = 'https://www.instagram.com/led_datsumo_loveliest_abiko'
 const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/t5yr2aNjqBoa9cnLA'
 const LINE_URL = '#' // TODO: 実際のLINE URLに差し替え
 

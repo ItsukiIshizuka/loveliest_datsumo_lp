@@ -50,7 +50,7 @@
 
 ## **6\. リソース情報**
 
-* **Instagram**: [https://www.instagram.com/led\_datsumo\_loveliest\_abiko2](https://www.instagram.com/led_datsumo_loveliest_abiko2)  
+* **Instagram**: [https://www.instagram.com/led\_datsumo\_loveliest\_abiko](https://www.instagram.com/led_datsumo_loveliest_abiko)  
 * **アクセス**:  
   * 住所: [https://maps.app.goo.gl/t5yr2aNjqBoa9cnLA](https://maps.app.goo.gl/t5yr2aNjqBoa9cnLA)  
   * 最寄り: 我孫子駅 徒歩15分  
