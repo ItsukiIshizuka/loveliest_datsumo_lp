@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
+import { createPortal } from 'react-dom'
 
 const PARTIAL_URL = 'https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000481060&menuId=MN00000011004507&add=5'
 const FULLBODY_URL = 'https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000481060&menuId=MN00000010703068&add=5'
@@ -56,7 +57,7 @@ export default function BookingButton({
         {children}
       </button>
 
-      {open && (
+      {open && createPortal(
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
           onClick={close}
@@ -130,7 +131,8 @@ export default function BookingButton({
               ホットペッパービューティーの予約画面へ移動します
             </p>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   )
