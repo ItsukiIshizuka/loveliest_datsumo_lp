@@ -1,8 +1,7 @@
 import { Check } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-
-const HOTPEPPER_URL = 'https://beauty.hotpepper.jp/kr/slnH000481060/coupon/#:~:text=%E3%81%A6%E4%BA%88%E7%B4%84%E3%81%99%E3%82%8B-%2C%E8%84%B1%E6%AF%9B%2C-%E3%80%90%E3%81%96%E3%81%A3%E3%81%8F%E3%82%8A%E5%88%86%E3%81%91%E5%A4%A7%E7%9B%A4%E6%8C%AF%E3%82%8B%E8%88%9E%E3%81%84'
+import BookingButton from '@/components/BookingButton'
 
 const plans = [
   {
@@ -128,13 +127,7 @@ export default function Pricing() {
           <p className="font-body text-xs text-muted-foreground">
             ※ 表示価格はすべて税込です。施術部位・毛量によって時間が前後する場合があります。
           </p>
-          <a
-            href={HOTPEPPER_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-cta inline-flex items-center justify-center gap-2.5 bg-white/70 backdrop-blur-sm border border-primary/30 text-primary font-body font-semibold text-sm px-8 py-4 rounded-full shadow-md shadow-primary/10 whitespace-nowrap"
-            aria-label="ホットペッパーで予約する（新しいタブで開きます）"
-          >
+          <BookingButton className="btn-cta inline-flex items-center justify-center gap-2.5 bg-white/70 backdrop-blur-sm border border-primary/30 text-primary font-body font-semibold text-sm px-8 py-4 rounded-full shadow-md shadow-primary/10 whitespace-nowrap">
             <svg viewBox="0 0 24 24" className="size-5 shrink-0 stroke-primary fill-none stroke-2" aria-hidden>
               <rect x="3" y="4" width="18" height="18" rx="2" ry="2" strokeLinecap="round" strokeLinejoin="round" />
               <line x1="16" y1="2" x2="16" y2="6" strokeLinecap="round" />
@@ -142,7 +135,7 @@ export default function Pricing() {
               <line x1="3" y1="10" x2="21" y2="10" strokeLinecap="round" />
             </svg>
             ホットペッパーで予約する
-          </a>
+          </BookingButton>
         </div>
       </div>
     </section>

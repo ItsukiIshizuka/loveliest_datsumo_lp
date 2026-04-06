@@ -1,9 +1,9 @@
 import { Phone, MapPin, Clock, Car } from 'lucide-react'
 import { Separator } from '@/components/ui/separator'
+import BookingButton from '@/components/BookingButton'
 
 const INSTAGRAM_URL = 'https://www.instagram.com/led_datsumo_loveliest_abiko'
 const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/t5yr2aNjqBoa9cnLA'
-const HOTPEPPER_URL = 'https://beauty.hotpepper.jp/kr/slnH000481060/coupon/#:~:text=%E3%81%A6%E4%BA%88%E7%B4%84%E3%81%99%E3%82%8B-%2C%E8%84%B1%E6%AF%9B%2C-%E3%80%90%E3%81%96%E3%81%A3%E3%81%8F%E3%82%8A%E5%88%86%E3%81%91%E5%A4%A7%E7%9B%A4%E6%8C%AF%E3%82%8B%E8%88%9E%E3%81%84'
 
 export default function Footer() {
   return (
@@ -105,13 +105,7 @@ export default function Footer() {
               ご予約・お問い合わせ
             </h3>
             <div className="space-y-3">
-              <a
-                href={HOTPEPPER_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-cta flex items-center justify-center gap-2 bg-white/70 backdrop-blur-sm border border-primary/30 text-primary font-body font-medium text-sm px-5 py-3 rounded-full shadow-sm shadow-primary/10 whitespace-nowrap"
-                aria-label="ホットペッパーで予約する（新しいタブで開きます）"
-              >
+              <BookingButton className="btn-cta flex items-center justify-center gap-2 bg-white/70 backdrop-blur-sm border border-primary/30 text-primary font-body font-medium text-sm px-5 py-3 rounded-full shadow-sm shadow-primary/10 whitespace-nowrap">
                 <svg viewBox="0 0 24 24" className="size-4 shrink-0 stroke-primary fill-none stroke-2" aria-hidden>
                   <rect x="3" y="4" width="18" height="18" rx="2" ry="2" strokeLinecap="round" strokeLinejoin="round" />
                   <line x1="16" y1="2" x2="16" y2="6" strokeLinecap="round" />
@@ -119,7 +113,7 @@ export default function Footer() {
                   <line x1="3" y1="10" x2="21" y2="10" strokeLinecap="round" />
                 </svg>
                 ホットペッパーで予約する
-              </a>
+              </BookingButton>
               <p className="font-body text-xs text-background/40 text-center">
                 24時間ネット予約受付中
               </p>
