@@ -29,10 +29,9 @@ const galleryItems = [
 ] as const
 
 type GalleryItem = (typeof galleryItems)[number]
-type ImageItem = GalleryItem & { src: NonNullable<GalleryItem['src']> }
 
 export default function MediaSection() {
-  const [selected, setSelected] = useState<ImageItem | null>(null)
+  const [selected, setSelected] = useState<GalleryItem | null>(null)
 
   const close = useCallback(() => setSelected(null), [])
 
@@ -79,31 +78,20 @@ export default function MediaSection() {
               className={`reveal reveal-stagger-${i + 1}`}
             >
               <div
-                className={`relative rounded-2xl overflow-hidden aspect-square sm:aspect-[3/4] shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300${item.src == null ? ` bg-gradient-to-br ${item.gradient} flex flex-col items-center justify-center` : ' cursor-zoom-in'}`}
-                onClick={item.src != null ? () => setSelected(item as ImageItem) : undefined}
-                role={item.src != null ? 'button' : undefined}
-                aria-label={item.src != null ? `${item.label}を拡大表示` : undefined}
-                tabIndex={item.src != null ? 0 : undefined}
-                onKeyDown={item.src != null ? (e) => { if (e.key === 'Enter' || e.key === ' ') setSelected(item as ImageItem) } : undefined}
+                className="relative rounded-2xl overflow-hidden aspect-square sm:aspect-[3/4] shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 cursor-zoom-in"
+                onClick={() => setSelected(item)}
+                role="button"
+                aria-label={`${item.label}を拡大表示`}
+                tabIndex={0}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setSelected(item) }}
               >
-                {item.src != null ? (
-                  <Image
-                    src={item.src}
-                    alt={item.label}
-                    fill
-                    sizes="(max-width: 640px) 50vw, 25vw"
-                    className="object-cover"
-                  />
-                ) : (
-                  <div className="flex flex-col items-center justify-center text-center p-3">
-                    <p className="font-body text-xs font-medium text-foreground/60 mb-1">
-                      {item.sub}
-                    </p>
-                    <p className="font-display text-sm font-medium text-foreground/80">
-                      {item.label}
-                    </p>
-                  </div>
-                )}
+                <Image
+                  src={item.src}
+                  alt={item.label}
+                  fill
+                  sizes="(max-width: 640px) 50vw, 25vw"
+                  className="object-cover"
+                />
               </div>
             </div>
           ))}
